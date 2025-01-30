@@ -6,14 +6,14 @@ body {
     background-color: #f9f9f9;
 }
 
-/* En-tête */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Aligne le logo et le menu à droite */
     align-items: center;
     padding: 15px 20px;
     background-color: #007a3d;
     color: white;
+    position: relative;
 }
 
 .logo {
@@ -23,6 +23,11 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+/* Styles de la navigation pour desktop */
+nav {
+    display: flex;
 }
 
 nav ul {
@@ -39,14 +44,67 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-.don-btn {
+nav ul li .don-btn {
     background: red;
     padding: 8px 15px;
     border-radius: 5px;
+    text-align: center;
+    color: white;
 }
 
+/* Styles du menu mobile */
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav ul li {
+    padding: 10px 20px;
+}
+
+.mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+/* Style du bouton don */
+.mobile-nav ul li .don-btn {
+    display: block;
+    background: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Affichage du menu lorsqu'il est activé */
+.mobile-nav.active {
+    display: block;
+}
+
+/* Styles pour la croix de fermeture */
+.mobile-nav-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.close-menu {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    display: none;
+}
+
+.close-menu:hover {
+    color: #ff6961; /* Rouge clair au survol */
+}
 /* Hero Section */
 .hero {
     position: relative;
@@ -354,6 +412,35 @@ nav ul li a {
 }
 .quiz-btn:hover {
     background: #b5e7b5;
+}
+
+.quiz-response {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none; /* Caché par défaut */
+}
+
+/* Réponse correcte */
+.quiz-response.correct {
+    background-color: #e6ffe6;
+    border: 2px solid #4CAF50;
+    color: #2e7d32;
+}
+
+/* Réponse incorrecte */
+.quiz-response.wrong {
+    background-color: #ffe6e6;
+    border: 2px solid #f44336;
+    color: #b71c1c;
+}
+
+/* Désactiver les boutons après sélection */
+.quiz-btn:disabled {
+    display: none;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .impact {

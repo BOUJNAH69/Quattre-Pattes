@@ -10,19 +10,26 @@
     <!--en tête-->
     <header>
         <div class="logo">
-            <img src="images /logo.png">
+            <img src="./images/icones/paw-print.png" alt="">
+            <div>Quatre Pattes</div>
+        </div>
+    
+        <!-- Bouton Burger -->
+    <!-- Bouton Burger + Croix -->
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
 
-    <nav>
-        <ul >
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#"class="don-btn">🤍faire un don</a></li>
-
-
-        </ul>
-    </nav>
-</header>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="/acceuil.html">Accueil</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#" class="don-btn">🤍&ensp; Faire un don</a></li>
+            </ul>
+        </nav>
+    </header>
 
 <main>
 
@@ -118,33 +125,51 @@
 </section>
              
 
- <!--Section Quiz -->
-   <section class="quiz">
+ <!-- Section Quiz -->
+ <section class="quiz">
     <h2>Testez Vos Connaissances</h2>
     <div class="quiz-container">
         <div class="quiz-item">
             <p class="quiz-question"><strong>Les associations gardent la majorité des dons pour leur fonctionnement</strong></p>
             <div class="quiz-options">
-                <button class="quiz-btn" data-answer="false">Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</button>
-                <button class="quiz-btn" data-answer="true">Faux</button>
+                <button class="quiz-btn" data-answer="false" data-message="❌ Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.">
+                    Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement
+                </button>
+                <button class="quiz-btn" data-answer="true" data-message="✅ Correct ! 85% des dons vont directement aux animaux.">
+                    Faux
+                </button>
             </div>
+            <div class="quiz-response"></div> <!-- Zone pour afficher la réponse -->
         </div>
+
         <div class="quiz-item">
             <p class="quiz-question"><strong>Les refuges ne prennent que les animaux en bonne santé</strong></p>
             <div class="quiz-options">
-                <button class="quiz-btn" data-answer="false">Vrai, ils refusent les animaux malades car c'est trop coûteux</button>
-                <button class="quiz-btn" data-answer="true">Faux</button>
+                <button class="quiz-btn" data-answer="false" data-message="❌ Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !">
+                    Vrai, ils refusent les animaux malades car c'est trop coûteux
+                </button>
+                <button class="quiz-btn" data-answer="true" data-message="✅ Correct ! Nos refuges prennent soin de tous les animaux, même les plus fragiles.">
+                    Faux
+                </button>
             </div>
+            <div class="quiz-response"></div> <!-- Zone pour afficher la réponse -->
         </div>
+
         <div class="quiz-item">
             <p class="quiz-question"><strong>Les associations ont trop de moyens grâce aux dons</strong></p>
             <div class="quiz-options">
-                <button class="quiz-btn" data-answer="false">Vrai, elles reçoivent beaucoup d'argent des donateurs</button>
-                <button class="quiz-btn" data-answer="true">Faux</button>
+                <button class="quiz-btn" data-answer="false" data-message="❌ Faux ! Chaque don est crucial pour la survie des animaux et des refuges.">
+                    Vrai, elles reçoivent beaucoup d'argent des donateurs
+                </button>
+                <button class="quiz-btn" data-answer="true" data-message="✅ Correct ! Les associations ont besoin de dons constants pour fonctionner.">
+                    Faux
+                </button>
             </div>
+            <div class="quiz-response"></div> <!-- Zone pour afficher la réponse -->
         </div>
     </div>
 </section>
+
 <!--Section Impact -->
 <section class="impact">
     <h2>Notre Impact</h2>
