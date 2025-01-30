@@ -562,4 +562,177 @@ nav ul li .don-btn {
     transform: scale(1.1);
 }
 
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form select {
+    cursor: pointer;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #007a3d;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.submit-btn:hover {
+    background-color: #005f2b;
+}
+
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+    .don-btn {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* Barres du burger */
+    .burger-menu .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    /* Animation pour la croix */
+    .burger-menu.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .burger-menu.active .bar:nth-child(2) {
+        opacity: 0; /* Cache la barre du milieu */
+    }
+
+    .burger-menu.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .burger-menu div {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        transition: 0.3s;
+    }
+        nav {
+        display: none;
+    }
+    .close-menu{
+        display: block;
+    }
+    /* Affichage du menu mobile */
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #007a3d;
+        text-align: left;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 24px;
+        transition: 0.3s;
+    }
+    
+    /* Quand le menu est ouvert */
+    .mobile-nav.active {
+        display: block;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .donation-container {
+       flex-direction: column;
+    }
+    .mission-container {
+        flex-direction: column;
+    }
+    
+    .mission-container img {
+        width: 100%;
+        border-radius: 15px;
+        margin-right: 0px;
+    }
+
+    .impact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contact {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
 

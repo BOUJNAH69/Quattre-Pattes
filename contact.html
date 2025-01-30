@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+     <!-- En-tête -->
+     <header>
+        <div class="logo">
+            <i data-lucide="paw-print"></i>
+            <div>Quatre Pattes</div>
+        </div>
+
+        <!-- Bouton Burger -->
+    <!-- Bouton Burger + Croix -->
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="don-btn">🤍 &ensp;Faire un don</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Contact -->
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST" class="contact-form">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Sujet</label>
+            <select id="subject" name="subject">
+                <option value="dons">Question sur les dons</option>
+                <option value="partenariat">Partenariat</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-btn">
+                <i data-lucide="send"></i> Envoyer
+            </button>
+        </form>
+    </section>
+
+        <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quatre Pattes</h3>
+                <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📧 contact@quatrepattes.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+            </div>
+        </div>
+    </footer>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+        lucide.createIcons();
+        </script>
+         <script src="script.js"></script>
 </body>
 </html>
