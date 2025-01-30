@@ -1,0 +1,478 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007a3d;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.don-btn {
+    background: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+/* section donation */
+/* Ajout d'une ombre uniquement à droite et en bas */
+.donation {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15); /* Ombre vers la droite et en bas */
+    max-width: 700px; /* Pour centrer et limiter la largeur */
+    margin: 40px auto; /* Centrer sur la page */
+}
+
+
+.donation h2 {
+    margin-bottom: 20px;
+}
+
+/* Ajout d'une ombre aux touches de dons */
+.donation-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.donation-option {
+    border: 2px solid #ddd;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre claire */
+}
+
+/* Style pour la touche sélectionnée */
+.donation-option.active {
+    border-color: green;
+    background: #e6ffe6;
+    box-shadow: 4px 6px 15px rgba(0, 128, 0, 0.2); /* Ombre plus prononcé */
+}
+
+/* Ajout d'une ombre aux boutons de fréquence */
+.donation-frequency {
+    margin-bottom: 20px;
+}
+
+.freq-btn {
+    border: none;
+    background: #ddd;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: 0.3s;
+}
+
+/* Ombre plus prnoncé au survol */
+.freq-btn:hover {
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du bouton sélectionné */
+.freq-btn.active {
+    background: green;
+    color: white;
+    box-shadow: 3px 5px 10px rgba(0, 128, 0, 0.3);
+}
+
+/* Bouton "Faire un don" */
+.donate-now {
+    background: red;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 5px 12px rgba(255, 0, 0, 0.3); 
+    transition: 0.3s;
+}
+
+/* Effet au survol */
+.donate-now:hover {
+    box-shadow: 4px 6px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* SECTION NOTRE MISSION */
+.mission {
+    background-color: #e6f7e6; /* Vert pastel */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-container img {
+    width: 45%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* SECTION HISTOIRES DE RÉUSSITE */
+.success-stories {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0 100px 0 100px;
+}
+
+/* Conteneur principal des histoires */
+.story-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Boîte contenant l'image principale et le texte */
+.story-main {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Pour garder une proportion harmonieuse */
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+
+/* Image principale */
+.story-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Overlay sombre pour le texte */
+.story-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+}
+
+.story-text h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.story-text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.story-text span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Miniatures alignées sous l'image principale */
+.story-thumbnails {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Boutons miniatures */
+.story-btn {
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    flex: 1; /* Assure que chaque miniature a la même largeur */
+    aspect-ratio: 16 / 9; /* Même proportion que l’image principale */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Texte sous les miniatures */
+.story-btn span {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+/* Effet lorsqu'une miniature est active */
+.story-btn.active {
+    border-color: green;
+    box-shadow: 0px 0px 8px rgba(0, 128, 0, 0.5);
+}
+
+.quiz {
+    background-color: #e6f7e6;
+    padding: 50px 20px;
+    text-align: center;
+}
+.quiz-container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.quiz-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.quiz-question {
+    font-size: 16px;
+    font-weight: bold;
+}
+.quiz-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.quiz-btn {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 5px;
+    text-align: center;
+}
+.quiz-btn:hover {
+    background: #b5e7b5;
+}
+
+.impact {
+    background-color: #e6f7e6;
+    padding: 50px 20px;
+    text-align: center;
+}
+.impact-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    align-items: center;
+}
+.impact-item {
+    text-align: center;
+}
+.impact-item svg {
+    width: 50px;
+    height: 50px;
+    color: #007a3d;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+
+/* SECTION TÉMOIGNAGES */
+.temoignages {
+    background-color: #f7fcf7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.temoignages h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.temoignages-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.temoignage-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 380px;
+    text-align: left;
+}
+
+.temoignage-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.temoignage-card p {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.temoignage-card strong {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* PIED DE PAGE */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+

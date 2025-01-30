@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--en tête-->
+    <header>
+        <div class="logo">
+            <img src="images /logo.png">
+        </div>
+
+    <nav>
+        <ul >
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"class="don-btn">🤍faire un don</a></li>
+
+
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!--section principale-->
+<section class="hero">
+    <img src="images /chiens & chats/chien & chat.jpg" alt="Chiens heureux">
+    <div class="overlay">
+        <h1>Protégeons-les Ensemble</h1>
+        <p>Chaque don compte pour leur offrir une vie meilleure</p>
+    </div>
+</section>
+
+ <!-- Section Don -->
+ <section class="donation">
+    <h2>Faites un don</h2>
+    <div class="donation-container">
+        <!-- l'attribut montant c'est pour le montant de la donation -->
+        <button class="donation-option" montant="10">
+            <span>10€</span>
+            <p>permet de nourir 5 animaux
+                pendant une semaine</p>
+        </button>
+        <button class="donation-option" montant="20" >
+            <span>20€</span>
+            <p>permet d’héberger un animal 
+                sauvage pendant une nuit</p>
+        </button>
+        <button class="donation-option active" montant="50">
+            <span>50€</span>
+            <p>permet de financer les soins 
+                vétérinaires complets pour un 
+                animal</p>
+        </button>
+    </div>
+    <div class="donation-frequency">
+        <button class="freq-btn" data-type="once">Une fois</button>
+        <button class="freq-btn active" data-type="monthly">Mensuel</button>
+        <button class="freq-btn" data-type="yearly">Annuel</button>
+    </div>
+    <button class="donate-now"> Faire un don de <span id="don-amount">50</span>€/mois</button>
+</section>
+
+
+<!--section notre mission-->
+<section class="mission">
+    <div class="mission-container">
+        <img src="images /chiens & chats/564269b2/nos amis.jpg" alt="chien heureux">
+<div class="mission-text">
+    <h2>Notre Mission</h2>
+    <p>Depuis 2010, Quatre Pattes oeuvre sans relâche pour la protection et le
+        bien-être des animaux en France. Notre mission est double : secourir les
+        animaux en détresseet sensibiliser le public à la cause animale.
+       
+       Chaque année, nous prenons en charge plus de 1000 animaux
+       abandonnées, maltramaltraités  ou blessés. Grâce à notre réseau de familles
+       d’accueil et nos partenariats avec des refuges, nous leur offrons une secondes chance.
+       
+       Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons 
+       faire la différence pour ces êtres qui comptent sur nous.</p>
+    </div>
+
+</section>
+
+<!--section histoire de réussite-->
+
+<section class="success-stories">
+    <h2>Histoires de Réussite</h2>
+    <div class="story-main">
+        <img src="images /chiens & chats/chient..jpg" alt="Luna">
+        <div class="story-text">
+            <h3>Luna</h3>
+            <p>Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrové sa joie de vivre. Elle coule maintenant des jours
+                heureux dans sa nouvelle famille.</p>
+            <span>Janvier 2024</span>
+        </div>
+    </div>
+   
+    <!-- Miniatures des histoires -->
+    <div class="story-thumbnails">
+        <button class="story-btn active" data-image="images/luna.png" data-title="Luna" data-text="Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.">
+            <img src="images/luna.png" alt="Luna">
+            <span>Luna</span>
+        </button>
+        <button class="story-btn" data-image="images/oscar.png" data-title="Oscar" data-text="Oscar a été abandonné dans un refuge, mais grâce à notre programme d’adoption, il a trouvé un nouveau foyer aimant.">
+            <img src="images/oscar.png" alt="Oscar">
+            <span>Oscar</span>
+        </button>
+        <button class="story-btn" data-image="images/max.png" data-title="Max" data-text="Max était un chien errant avant d’être recueilli par une famille chaleureuse. Aujourd’hui, il vit une vie heureuse et active.">
+            <img src="images/max.png" alt="Max">
+            <span>Max</span>
+        </button>
+    </div>
+</section>
+             
+
+ <!--Section Quiz -->
+   <section class="quiz">
+    <h2>Testez Vos Connaissances</h2>
+    <div class="quiz-container">
+        <div class="quiz-item">
+            <p class="quiz-question"><strong>Les associations gardent la majorité des dons pour leur fonctionnement</strong></p>
+            <div class="quiz-options">
+                <button class="quiz-btn" data-answer="false">Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</button>
+                <button class="quiz-btn" data-answer="true">Faux</button>
+            </div>
+        </div>
+        <div class="quiz-item">
+            <p class="quiz-question"><strong>Les refuges ne prennent que les animaux en bonne santé</strong></p>
+            <div class="quiz-options">
+                <button class="quiz-btn" data-answer="false">Vrai, ils refusent les animaux malades car c'est trop coûteux</button>
+                <button class="quiz-btn" data-answer="true">Faux</button>
+            </div>
+        </div>
+        <div class="quiz-item">
+            <p class="quiz-question"><strong>Les associations ont trop de moyens grâce aux dons</strong></p>
+            <div class="quiz-options">
+                <button class="quiz-btn" data-answer="false">Vrai, elles reçoivent beaucoup d'argent des donateurs</button>
+                <button class="quiz-btn" data-answer="true">Faux</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Impact -->
+<section class="impact">
+    <h2>Notre Impact</h2>
+    <div class="impact-container">
+        <div class="impact-item">
+            <i data-lucide="home"></i>
+            <p><strong>50+ Refuges</strong></p>
+            <p>Partenaires à travers la France</p>
+        </div>
+        <div class="impact-item">
+            <i data-lucide="paw-print"></i>
+            <p><strong>1000+ Animaux</strong></p>
+            <p>Sauvés chaque année</p>
+        </div>
+        <div class="impact-item">
+            <i data-lucide="utensils"></i>
+            <p><strong>10 000+ Repas</strong></p>
+            <p>Distribuées par mois</p>
+        </div>
+    </div>
+</section>
+<!--section témoignage-->
+<section class="temoignages">
+<h2>Temoignage</h2>
+<div class="temoignages-container">
+    <div class="temoignage-card">
+        <img src="images /chiens & chats/564269b2/lyon.jpg" alt="Refuge des Quatre Pattes-Lyon">
+        <p>“Grace à vos dons, nous avons pu accueillr  plus de 200 animaix cette année et leur offrir une seconde chance”</p>
+        <strong>Refuge de Quattres Pattes-Lyon</strong>
+</div>
+<div class="temoignage-card">
+    <img src="images /chiens & chats/refuge Marseille.jpg" alt="Refuge de Marseille">
+    <p>“ Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages"</p>
+        <strong>Sanctuaire Animal-Marseille</strong>
+</div>
+
+<div class="temoignage-card">
+<img src="images /chiens & chats/564269b2/chat.jpg" alt="Refuge du Social-Paris">
+<p>“Chaque don compte et nous aide à offrir un avenir meilleur aux animaux 
+    abondonnés</p>
+    <strong>Refuge du Soleil-Paris</strong>
+</div>
+</div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quatre Pattes</h3>
+            <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📧 contact@quatrepattes.org</p>
+        </div>
+        <div class="footer-section">
+            <h3>Suivez-nous</h3>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+
+</main>
+  
+</body>
+</html>
